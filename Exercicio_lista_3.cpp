@@ -243,6 +243,7 @@ escrever o nome do mês, senão escrever uma mensagem ‘Mês Inválido’.
 
 }
 
+
 int main(){
     
     int opcao;
@@ -259,6 +260,7 @@ int main(){
         printf("3 - Exercício 03\n");
         printf("4 - Exercício 04\n");
         printf("5 - Exercício 05\n");
+        printf("5 - Exercício 06\n");
         printf("0 - Sair\n");         
         printf("Digite sua opção: ");
 
@@ -290,7 +292,12 @@ int main(){
                 exercicio5();
                 break;
 
-            case 0: 
+            case 6:
+                exercicio6();
+                break;
+
+            case 0:
+
                 printf("Saindo do programa...\n");
                 break;
         
