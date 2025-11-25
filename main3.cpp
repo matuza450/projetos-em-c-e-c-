@@ -1,17 +1,17 @@
 #include <stdio.h>
 #include <locale.h>
+#include <stdlib.h>
 
 int main(){
-    setlocale(LC_ALL, "");
+    int numero, cont, neg=0;
 
-    int cont;
-    
-    // for (var=valor inicial; condição;inremento/decremento)
-
-    for(cont=3; cont<=11;cont++){
-        printf("%d\n",cont);
+    for (cont=0; cont <5;cont++){
+        printf("\nDigite um numero inteiro: ");
+        scanf("%d", &numero);
+        if (numero<0) neg=neg+1;
     }
 
-    return 0;
-    
+    printf("\nO numero de valores negativos é%d\n", neg);
+
+    system("pause");
 }
