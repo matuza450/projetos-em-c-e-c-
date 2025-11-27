@@ -9,6 +9,20 @@ main(){
     int i;
     
     for(i = 1; i <= 100; i++){
-        printf("Digite o %d° número real: ")
+        printf("Digite o %d° número real: ", i);
+        scanf("%f", &num);
+        soma = soma + num;
+
+        if (num > maior){
+            maior = num;
+
+        }
+        soma = soma + num;
+
     }
+    media = soma / 100;
+    printf("A soma dos números digitados é: %.2f\n", soma);
+    printf("A média dos números digitados é: %.2f\n", media);
+    printf("O maior número digitado é: %.2f\n", maior);
+    return 0;
 }
